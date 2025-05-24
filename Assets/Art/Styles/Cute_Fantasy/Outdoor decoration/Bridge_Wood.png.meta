@@ -55,7 +55,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -69,7 +69,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -93,7 +93,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -134,12 +134,12 @@ TextureImporter:
       name: Bridge_Wood_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 47
-        width: 13
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 5
+        y: 48
+        width: 11
+        height: 16
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -156,12 +156,12 @@ TextureImporter:
       name: Bridge_Wood_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 47
-        width: 8
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 17
+        y: 48
+        width: 6
+        height: 16
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -178,12 +178,12 @@ TextureImporter:
       name: Bridge_Wood_2
       rect:
         serializedVersion: 2
-        x: 24
-        y: 47
-        width: 8
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 25
+        y: 48
+        width: 6
+        height: 16
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -200,12 +200,12 @@ TextureImporter:
       name: Bridge_Wood_3
       rect:
         serializedVersion: 2
-        x: 31
-        y: 47
-        width: 13
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 32
+        y: 48
+        width: 11
+        height: 16
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -222,12 +222,12 @@ TextureImporter:
       name: Bridge_Wood_4
       rect:
         serializedVersion: 2
-        x: 4
-        y: 9
-        width: 40
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 5
+        y: 10
+        width: 38
+        height: 30
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -244,12 +244,12 @@ TextureImporter:
       name: Bridge_Wood_5
       rect:
         serializedVersion: 2
-        x: 57
-        y: 4
-        width: 30
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 58
+        y: 5
+        width: 28
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -266,12 +266,12 @@ TextureImporter:
       name: Bridge_Wood_6
       rect:
         serializedVersion: 2
-        x: 105
-        y: 4
-        width: 30
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 106
+        y: 5
+        width: 28
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -288,7 +288,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5673f4c1c9fb13341b9f3882a60816ae
     internalID: 0
     vertices: []
     indices: 
@@ -297,7 +297,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bridge_Wood_0: -59419316028170722
+      Bridge_Wood_1: 7506926857048110271
+      Bridge_Wood_2: -6441673226787998722
+      Bridge_Wood_3: -9142544502833899335
+      Bridge_Wood_4: 4920015224640609776
+      Bridge_Wood_5: -4785640308677409631
+      Bridge_Wood_6: 3783615309959501221
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
