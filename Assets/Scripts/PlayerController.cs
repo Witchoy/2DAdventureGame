@@ -22,7 +22,7 @@ public class NewEmptyCSharpScript : MonoBehaviour
 
     void FixedUpdate()
     {
-        Vector2 position = (Vector2)rb.position + move * 3.0f * Time.deltaTime;
+        Vector2 position = (Vector2)rb.position + move * 5.0f * Time.deltaTime;
         rb.MovePosition(position);
     }
 }
