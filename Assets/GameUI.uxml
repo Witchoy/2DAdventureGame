@@ -1,0 +1,8 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement name="HealthBarBackground" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/Art/Styles/Ducko/UI/UIHealthFrame.png?fileID=2800000&amp;guid=b47cdbd2062c5e64ba5a0bf3f6b045b1&amp;type=3#UIHealthFrame&quot;); width: 612px; height: 261px; -unity-background-scale-mode: scale-to-fit; position: absolute;">
+        <engine:VisualElement name="HealthBarContainer" style="flex-grow: 1; position: absolute; height: 91px; width: 319px; top: 79px; left: 255px;">
+            <engine:VisualElement name="HealthBar" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Art/Styles/Ducko/UI/UIHealthBar.png?fileID=21300000&amp;guid=39fe000f2b6d9d04b93d6a76310e29aa&amp;type=3#UIHealthBar&quot;);" />
+        </engine:VisualElement>
+        <engine:VisualElement name="CharacterPortrait" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Art/Styles/Cute_Fantasy/Player/Player.png?fileID=-2311659948842064771&amp;guid=dcdbf2903125c3140a855c473fcaefa1&amp;type=3#Player_0&quot;); -unity-background-scale-mode: scale-to-fit; position: absolute; height: 265px; width: 279px; top: 5px; left: 16px;" />
+    </engine:VisualElement>
+</engine:UXML>

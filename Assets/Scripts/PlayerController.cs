@@ -63,7 +63,7 @@ public class PlayerController : MonoBehaviour
             damageCooldown = timeInvincible;
         }
         currentHealth = Math.Clamp(currentHealth + amount, 0, maxHealth);
-        Debug.Log(currentHealth + "/" + maxHealth);
+        UIHandler.instance.SetHealthValue(currentHealth / (float)maxHealth);
     }
 
     // Return 'true' if the player's current health is at max, otherwise 'false' 
