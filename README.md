@@ -18,7 +18,7 @@ The course covers:
 - [x] Player character and movement  
 - [x] Game environment and physics  
 - [x] Health system  
-- [ ] Heads-up UI display  
+- [X] Heads-up UI display  
 - [ ] Character and interaction mechanics  
 - [ ] Enhance and polish
 
