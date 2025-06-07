@@ -77,3 +77,4 @@ crashlytics-build.properties
 .gitignore
 .gitattributes
 *.conf
+.plastic/plastic.wktree

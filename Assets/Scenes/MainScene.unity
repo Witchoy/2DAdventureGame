@@ -2303,6 +2303,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
+--- !u!1001 &470391181
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1395011286}
+    m_Modifications:
+    - target: {fileID: 8485555489278112331, guid: 88fd071a6fb20d440ae03dcdb133bb1e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 8485555489278112331, guid: 88fd071a6fb20d440ae03dcdb133bb1e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 8485555489278112331, guid: 88fd071a6fb20d440ae03dcdb133bb1e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8485555489278112331, guid: 88fd071a6fb20d440ae03dcdb133bb1e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8485555489278112331, guid: 88fd071a6fb20d440ae03dcdb133bb1e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8485555489278112331, guid: 88fd071a6fb20d440ae03dcdb133bb1e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8485555489278112331, guid: 88fd071a6fb20d440ae03dcdb133bb1e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8485555489278112331, guid: 88fd071a6fb20d440ae03dcdb133bb1e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8485555489278112331, guid: 88fd071a6fb20d440ae03dcdb133bb1e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8485555489278112331, guid: 88fd071a6fb20d440ae03dcdb133bb1e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884251055117647206, guid: 88fd071a6fb20d440ae03dcdb133bb1e, type: 3}
+      propertyPath: m_Name
+      value: HealthMushroom (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 88fd071a6fb20d440ae03dcdb133bb1e, type: 3}
 --- !u!4 &478231553 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4864526568167761424, guid: 0c0baca03a1cf2b46bbf99f855aa461c, type: 3}
@@ -13568,6 +13625,7 @@ Transform:
   - {fileID: 1773736443}
   - {fileID: 1711088123}
   - {fileID: 688177601}
+  - {fileID: 1626410733}
   - {fileID: 1255388327}
   - {fileID: 1712983791}
   - {fileID: 1882689627}
@@ -14474,6 +14532,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 5521977675804089398, guid: de7fc24becdf82c428230c78aace2bfd, type: 3}
   m_PrefabInstance: {fileID: 335240744}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1626410733 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8485555489278112331, guid: 88fd071a6fb20d440ae03dcdb133bb1e, type: 3}
+  m_PrefabInstance: {fileID: 470391181}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1633297922
 GameObject:
