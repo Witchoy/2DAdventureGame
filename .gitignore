@@ -72,10 +72,6 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 
-.plastic
 .vscode
 .gitignore
 .gitattributes
-*.conf
-.plastic/plastic.wktree
-/.plastic
