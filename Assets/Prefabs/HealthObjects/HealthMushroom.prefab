@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8555223742540547862}
   - component: {fileID: 8413435455420283329}
   - component: {fileID: 5263311420032385369}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HealthMushroom
   m_TagString: Untagged
   m_Icon: {fileID: 0}

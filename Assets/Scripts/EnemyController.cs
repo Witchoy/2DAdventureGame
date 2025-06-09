@@ -15,7 +15,7 @@ public class EnemyController : MonoBehaviour
     private Animator animator;
     private float timer;
     private int direction = 1;
-
+    bool broken = true;
 
     // Start is called before the first frame update
     void Start()
@@ -38,6 +38,10 @@ public class EnemyController : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (!broken)
+        {
+            return;
+        }
         Vector2 position = rigidbody2d.position;
         if (vertical)
         {
@@ -64,7 +68,12 @@ public class EnemyController : MonoBehaviour
         }
         else
         {
-            Debug.Log("Player is null ! " + collision.ToString() );
+            Debug.Log("Player is null ! " + collision.ToString());
         }
+    }
+
+    public void Kill()
+    {
+        Destroy(gameObject);
     }
 }
