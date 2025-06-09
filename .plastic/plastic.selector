@@ -1,4 +1,0 @@
-repository "2DAdventureGame/2DAdventureGame@20066405122625@cloud"
-  path "/"
-    smartbranch "/main" 
-     

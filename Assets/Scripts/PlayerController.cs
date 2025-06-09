@@ -20,11 +20,16 @@ public class PlayerController : MonoBehaviour
 
     private int currentHealth;
 
+    // Animation's variables
+    private Animator animator;
+    Vector2 moveDirection = new Vector2(1, 0);
+
     // Start is called before the first frame update
     protected void Start()
     {
         moveAction.Enable();
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         currentHealth = maxHealth;
     }
 
@@ -32,6 +37,15 @@ public class PlayerController : MonoBehaviour
     protected void Update()
     {
         move = moveAction.ReadValue<Vector2>();
+        if (!Mathf.Approximately(move.x, 0.0f) || !Mathf.Approximately(move.y, 0.0f))
+        {
+            moveDirection.Set(move.x, move.y);
+            moveDirection.Normalize();
+        }
+
+        animator.SetFloat("Look X", moveDirection.x);
+        animator.SetFloat("Look Y", moveDirection.y);
+        animator.SetFloat("Speed", move.magnitude);
 
         if (isInvincible)
         {
@@ -55,6 +69,7 @@ public class PlayerController : MonoBehaviour
     {
         if (amount < 0)
         {
+            animator.SetTrigger("Hit");
             if (isInvincible)
             {
                 return;
