@@ -24,6 +24,9 @@ public class PlayerController : MonoBehaviour
     private Animator animator;
     Vector2 moveDirection = new Vector2(1, 0);
 
+    // Projectiles
+    public GameObject projectilePrefab;
+
     // Start is called before the first frame update
     protected void Start()
     {
@@ -55,6 +58,11 @@ public class PlayerController : MonoBehaviour
                 isInvincible = false;
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            Launch();
+        }
     }
 
     // Move the player based on the inputs and speed
@@ -85,5 +93,14 @@ public class PlayerController : MonoBehaviour
     public bool IsHealthMaxed()
     {
         return currentHealth == maxHealth;
+    }
+
+    // Launches a projectiles
+    public void Launch()
+    {
+        GameObject projectileObject = Instantiate(projectilePrefab, rb.position + Vector2.up * 0.5f, Quaternion.identity);
+        Projectile projectile = projectileObject.GetComponent<Projectile>();
+        projectile.Launch(moveDirection, 300);
+        animator.SetTrigger("Launch");
     }
 }

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4297848425960787103}
   - component: {fileID: 4276693428830205448}
   - component: {fileID: 8720660564944228816}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PlayerCharacter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -276,6 +276,7 @@ MonoBehaviour:
   speed: 5
   maxHealth: 5
   timeInvincible: 1.5
+  projectilePrefab: {fileID: 7003081034852008824, guid: d4d91cbfad856374189c397b18dd5954, type: 3}
 --- !u!50 &4297848425960787103
 Rigidbody2D:
   serializedVersion: 5
@@ -359,7 +360,7 @@ Animator:
   m_GameObject: {fileID: 464727951453032326}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a360630f9af42774583485f3e87391aa, type: 2}
+  m_Controller: {fileID: 9100000, guid: 34d36e1bead33a942930d6f3d41aa8fa, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
