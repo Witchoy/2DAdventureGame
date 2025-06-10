@@ -19,7 +19,7 @@ The course covers:
 - [x] Game environment and physics  
 - [x] Health system  
 - [X] Heads-up UI display  
-- [ ] Character and interaction mechanics  
+- [X] Character and interaction mechanics  
 - [ ] Enhance and polish
 
 ## 🎨 Assets
