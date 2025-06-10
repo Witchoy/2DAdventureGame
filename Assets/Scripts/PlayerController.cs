@@ -6,6 +6,8 @@ public class PlayerController : MonoBehaviour
 {
     // Unity's variable
     public InputAction moveAction;
+    public InputAction talkAction;
+    public InputAction fireAction;
     private Rigidbody2D rb;
     public Vector2 move;
 
@@ -30,6 +32,8 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     protected void Start()
     {
+        talkAction.Enable();
+        fireAction.Enable();
         moveAction.Enable();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
@@ -59,9 +63,14 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.C))
+        if (fireAction.WasPerformedThisFrame())
         {
             Launch();
+        }
+
+        if (talkAction.WasPerformedThisFrame())
+        {
+            FindFriend();
         }
     }
 
@@ -102,5 +111,19 @@ public class PlayerController : MonoBehaviour
         Projectiles projectile = projectileObject.GetComponent<Projectiles>();
         projectile.Launch(moveDirection, 300);
         animator.SetTrigger("Launch");
+    }
+
+    public void FindFriend()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(rb.position + Vector2.up * 0.2f, moveDirection, 1.5f, LayerMask.GetMask("NPC"));
+
+        if (hit.collider != null)
+        {
+            NPCController npc = hit.collider.GetComponent<NPCController>();
+            if (npc != null)
+            {
+                UIHandler.instance.DisplayDialogue();
+            }
+        }
     }
 }

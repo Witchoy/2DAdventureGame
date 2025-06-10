@@ -4,10 +4,10 @@ public class Projectiles : MonoBehaviour
 {
     Rigidbody2D rb;
 
-    // Awake is called when the Projectile GameObject is instantiated
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        DestroyAfterDelay();
     }
 
     void Update()
@@ -34,4 +34,8 @@ public class Projectiles : MonoBehaviour
         Destroy(gameObject);
     }
 
+    void DestroyAfterDelay()
+    {
+        Destroy(gameObject, 5f);
+    }
 }

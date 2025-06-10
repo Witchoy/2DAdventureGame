@@ -63,12 +63,7 @@ public class EnemyController : MonoBehaviour
         PlayerController player = collision.gameObject.GetComponent<PlayerController>();
         if (player != null)
         {
-            Debug.Log("Collision entenred !");
             player.ChangeHealth(-damage);
-        }
-        else
-        {
-            Debug.Log("Player is null ! " + collision.ToString());
         }
     }
 

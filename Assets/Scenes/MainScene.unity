@@ -1176,6 +1176,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
+--- !u!1 &259178841 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6396023963122103046, guid: 002bddfb60eafb547a807a929cab3d98, type: 3}
+  m_PrefabInstance: {fileID: 1950630447296786730}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &259178846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259178841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd9590ab852196041b30806d7d3bd78f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &309955410
 GameObject:
   m_ObjectHideFlags: 0
@@ -5341,7 +5358,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: a89ea6ed1454894459ab6200b134f96c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15092,6 +15109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a12fea49ebd51344b5553ade6f930f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  displayTime: 4
 --- !u!1001 &1730817608
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17966,6 +17984,70 @@ PrefabInstance:
       propertyPath: timeInvincible
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5081506602454583623, guid: bb07a01e0f8403b4ba50c28bc974d451, type: 3}
+      propertyPath: fireAction.m_Name
+      value: Fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081506602454583623, guid: bb07a01e0f8403b4ba50c28bc974d451, type: 3}
+      propertyPath: talkAction.m_Name
+      value: Talk
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081506602454583623, guid: bb07a01e0f8403b4ba50c28bc974d451, type: 3}
+      propertyPath: fireAction.m_SingletonActionBindings.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081506602454583623, guid: bb07a01e0f8403b4ba50c28bc974d451, type: 3}
+      propertyPath: talkAction.m_SingletonActionBindings.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081506602454583623, guid: bb07a01e0f8403b4ba50c28bc974d451, type: 3}
+      propertyPath: fireAction.m_SingletonActionBindings.Array.data[0].m_Id
+      value: a46dc129-e7dc-4146-b968-a68b5b7883f5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081506602454583623, guid: bb07a01e0f8403b4ba50c28bc974d451, type: 3}
+      propertyPath: fireAction.m_SingletonActionBindings.Array.data[1].m_Id
+      value: 134418af-1d1e-42ab-937b-526653efb93d
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081506602454583623, guid: bb07a01e0f8403b4ba50c28bc974d451, type: 3}
+      propertyPath: talkAction.m_SingletonActionBindings.Array.data[0].m_Id
+      value: 78c75819-a0a4-49a6-b5e2-3ab4693c3814
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081506602454583623, guid: bb07a01e0f8403b4ba50c28bc974d451, type: 3}
+      propertyPath: talkAction.m_SingletonActionBindings.Array.data[1].m_Id
+      value: a034a19b-82e6-4576-b4e7-d9d76f803fbd
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081506602454583623, guid: bb07a01e0f8403b4ba50c28bc974d451, type: 3}
+      propertyPath: fireAction.m_SingletonActionBindings.Array.data[0].m_Path
+      value: <Keyboard>/f
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081506602454583623, guid: bb07a01e0f8403b4ba50c28bc974d451, type: 3}
+      propertyPath: fireAction.m_SingletonActionBindings.Array.data[1].m_Path
+      value: <Gamepad>/buttonSouth
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081506602454583623, guid: bb07a01e0f8403b4ba50c28bc974d451, type: 3}
+      propertyPath: talkAction.m_SingletonActionBindings.Array.data[0].m_Path
+      value: <Keyboard>/e
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081506602454583623, guid: bb07a01e0f8403b4ba50c28bc974d451, type: 3}
+      propertyPath: talkAction.m_SingletonActionBindings.Array.data[1].m_Path
+      value: <Gamepad>/buttonWest
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081506602454583623, guid: bb07a01e0f8403b4ba50c28bc974d451, type: 3}
+      propertyPath: fireAction.m_SingletonActionBindings.Array.data[0].m_Action
+      value: Fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081506602454583623, guid: bb07a01e0f8403b4ba50c28bc974d451, type: 3}
+      propertyPath: fireAction.m_SingletonActionBindings.Array.data[1].m_Action
+      value: Fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081506602454583623, guid: bb07a01e0f8403b4ba50c28bc974d451, type: 3}
+      propertyPath: talkAction.m_SingletonActionBindings.Array.data[0].m_Action
+      value: Talk
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081506602454583623, guid: bb07a01e0f8403b4ba50c28bc974d451, type: 3}
+      propertyPath: talkAction.m_SingletonActionBindings.Array.data[1].m_Action
+      value: Talk
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18103,6 +18185,66 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3394805429877234996, guid: 8eebe8a8faa323a428cd72a1ed3bfcbc, type: 3}
   m_PrefabInstance: {fileID: 920819365418275155}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1950630447296786730
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2566590442847477712, guid: 002bddfb60eafb547a807a929cab3d98, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 2566590442847477712, guid: 002bddfb60eafb547a807a929cab3d98, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 2566590442847477712, guid: 002bddfb60eafb547a807a929cab3d98, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2566590442847477712, guid: 002bddfb60eafb547a807a929cab3d98, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2566590442847477712, guid: 002bddfb60eafb547a807a929cab3d98, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2566590442847477712, guid: 002bddfb60eafb547a807a929cab3d98, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2566590442847477712, guid: 002bddfb60eafb547a807a929cab3d98, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2566590442847477712, guid: 002bddfb60eafb547a807a929cab3d98, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2566590442847477712, guid: 002bddfb60eafb547a807a929cab3d98, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2566590442847477712, guid: 002bddfb60eafb547a807a929cab3d98, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6396023963122103046, guid: 002bddfb60eafb547a807a929cab3d98, type: 3}
+      propertyPath: m_Name
+      value: MarthaSheet_0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6396023963122103046, guid: 002bddfb60eafb547a807a929cab3d98, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 259178846}
+  m_SourcePrefab: {fileID: 100100000, guid: 002bddfb60eafb547a807a929cab3d98, type: 3}
 --- !u!1001 &2448310339705918398
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18983,3 +19125,4 @@ SceneRoots:
   - {fileID: 2042196936}
   - {fileID: 1717907449}
   - {fileID: 652678890}
+  - {fileID: 1950630447296786730}
