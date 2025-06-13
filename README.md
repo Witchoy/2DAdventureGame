@@ -20,7 +20,7 @@ The course covers:
 - [x] Health system  
 - [X] Heads-up UI display  
 - [X] Character and interaction mechanics  
-- [ ] Enhance and polish
+- [X] Enhance and polish
 
 ## 🎨 Assets
 
